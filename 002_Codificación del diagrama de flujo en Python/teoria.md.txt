@@ -1,0 +1,35 @@
+Para el ingreso de un dato por teclado y mostrar un mensaje se utiliza la función input, esta función retorna todos los caracteres escritos por el operador del programa:
+
+lado=input("Ingrese la medida del lado del cuadrado:")
+La variable lado guarda todos los caracteres ingresados pero no en formato numérico, para esto debemos llamar a la función int:
+
+lado=int(lado)
+Ahora se vuelve a guardar en la variable lado el valor que ingresó el operador pero en formato entero que posibilita hacer operaciones matemáticas con el mismo.
+
+Un formato simplificado para ingresar un valor entero por teclado y evitarnos escribir las dos líneas anteriores es:
+
+lado=int(input("Ingrese la medida del lado del cuadrado:"))
+Procedemos a efectuar el cálculo de la superficie luego de ingresar el dato por teclado y convertirlo a entero:
+
+superficie=lado*lado
+Para mostrar un mensaje por pantalla tenemos la función print que le pasamos como parámetro una cadena de caracteres a mostrar que debe estar entre simple o doble comillas:
+
+print("La superficie del cuadrado es")
+Para mostrar el contenido de la variable superficie no debemos encerrarla entre comillas cuando llamamos a la función print:
+
+print(superficie)
+Algunas consideraciones
+Python es sensible a mayúsculas y minúsculas, no es lo mismo llamar a la función input con la sintaxis: Input.
+
+Los nombres de variables también son sensibles a mayúsculas y minúsculas. Son dos variables distintas si en un lugar iniciamos a la variable "superficie" y luego hacemos referencia a "Superficie"
+
+Los nombres de variable no pueden tener espacios en blanco, caracteres especiales y empezar con un número.
+
+Todo el código debe escribirse en la misma columna, estará incorrecto si escribimos:
+
+lado=input("Ingrese la medida del lado del cuadrado:")
+  lado=int(lado)
+  superficie=lado*lado
+print("La superficie del cuadrado es")
+print(superficie)
+Hay más restricciones que iremos aprendiendo a medida que avance el curso.

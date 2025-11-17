@@ -1,0 +1,89 @@
+[33mcommit c7c9e65df6b90171eb0b5250aa9accb27944d3d6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Mon Nov 17 11:50:44 2025 -0300
+
+    Listas paralelas
+
+[33mcommit 63fab3e37bc6bb964d63d2c84aa9794c253dda44[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Fri Nov 14 22:28:13 2025 -0300
+
+    Listas: mayor y menor elemento
+
+[33mcommit 3feb3dbff80fc74cba72c91302ad8bee0f6953e3[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Nov 13 21:55:29 2025 -0300
+
+    Listas: carga por teclado de sus elementos
+
+[33mcommit 64114b267e2dded867b4da750594cdc39dddffb4[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Nov 13 19:51:23 2025 -0300
+
+    Estructura de datos tipo lista
+
+[33mcommit 81467c380e1f7d81a7446a9cac7db2a644b56c79[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Wed Nov 12 01:37:35 2025 -0300
+
+    Procesar cadenas de caracteres
+
+[33mcommit 5fb0042a6c88fa9ecaa81f0fb6fbd80556c9f7d6[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Tue Nov 11 22:58:40 2025 -0300
+
+    Variables enteras, flotantes y cadenas de caracteres
+
+[33mcommit ca5ee70f2f23e140a17a4932f08f80d18bd0ec1b[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Tue Nov 11 18:31:51 2025 -0300
+
+    Definición de comentarios en el código fuente
+
+[33mcommit 25212fdfa24b21582108002ddee73bfcd1d4b70f[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Tue Nov 11 18:23:01 2025 -0300
+
+    ejerciciosdel09-016
+
+[33mcommit 406533444594ef5822ed067dfb7650dd1bce578f[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Fri Nov 7 20:46:56 2025 -0300
+
+    Estructura repetitiva for
+
+[33mcommit ec793e2b2769f380474aee61d624bc2458f91066[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Nov 6 20:00:56 2025 -0300
+
+    ejercicios
+
+[33mcommit e8516a6f7b517688f2e4d537fffbc38811e702de[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Oct 16 19:24:37 2025 -0300
+
+    Condiciones compuestas con operadores lógicos
+
+[33mcommit bf1fb6a4598ecab3d28ac06d4453e5387ebff9d5[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Oct 16 18:29:13 2025 -0300
+
+    bien
+
+[33mcommit 0349dc0ee29cec8b614c41b286df000fa6562689[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Oct 16 15:24:53 2025 -0300
+
+    Corrijo README para que se muestre en GitHub
+
+[33mcommit 70f6cd28ec002a88e856fc1def73e5d73b660eb1[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Oct 16 15:22:19 2025 -0300
+
+    readme
+
+[33mcommit e5772f94fe6c3fed94e57bb03fc540c3575cbf42[m
+Author: wilson-j-insaurralde <wilson-insaurralde@hotmail.com>
+Date:   Thu Oct 16 15:16:28 2025 -0300
+
+    Primer commit - ejercicios de Python

@@ -24,8 +24,6 @@ def retornar_mayormenor(lista):
     return (may,men)
 
 
-# bloque principal
-
 lista=cargar()
 mayor,menor=retornar_mayormenor(lista)
 print("Mayor valor de la lista:",mayor)

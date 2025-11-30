@@ -11,7 +11,6 @@ Debe mostrar un menú con las siguientes opciones:
 class agenda():
     def __init__(self):
       self.contactos={}
-
     def cargar(self):
         print("--------------------------------------------------")
         seguir="s"
@@ -21,15 +20,13 @@ class agenda():
             email=input("ingrese el email: ")
             self.contactos[nombre]=(telefono,email)
             seguir=input("desea seguir a gregando contactos?[s/n]")
-        print("--------------------------------------------------")
-    
+        print("--------------------------------------------------")  
     def listar(self):
         print("--------------------------------------------------")
         print("listado de la agenda: ")
         for nombre in (self.contactos):
             print(nombre,self.contactos[nombre][0],self.contactos[nombre][1] )
         print("--------------------------------------------------")
-        
     def consultar(self):
         print("--------------------------------------------------")
         nombre=input("ingrese el nombre a consultar: ")
@@ -38,7 +35,6 @@ class agenda():
         else:
                 print("no se encuentra dicha persona.")
         print("--------------------------------------------------")
-
     def modificar(self):
         print("--------------------------------------------------")
         tuki=input("ingrese el nombre de la persona que desea mopdificar el telefono y nombre: ")
@@ -49,7 +45,6 @@ class agenda():
         else:
           print("no se encuentra dicha persona.")
         print("--------------------------------------------------")
-
     def menu(self):
      
      con=0
@@ -69,7 +64,5 @@ class agenda():
              self.consultar()
         elif con==4:
              self.modificar()
-
-
 agenda1=agenda()
 agenda1.menu()            

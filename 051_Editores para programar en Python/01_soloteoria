@@ -1,0 +1,14 @@
+PyCharm: Es un entorno de desarrollo creado por la empresa Jet Brains. Viene en dos versiones, la básica que es open source y la podemos descargar del sitio de: JetBrains
+En la misma página tenemos el enlace para registrarnos y comprar la versión profesional.
+
+PyDev IDE: Este entorno de desarrollo es una adaptación del editor Eclipse. Lo podemos descargar del sitio de: pydev
+Es open source al igual que el editor Eclipse.
+
+Wing: Es un entorno para trabajar con Python con numerosas herramientas para programar y depurar programas. Hay una versión gratuita, pero la que tiene todas las herramientas es comercial. Podemos descargar este entorno del sitio: wingware
+
+VS Code: Es un editor de texto que agregando extensiones podemos trabajar con Python con herramientas para programar y depurar programas. Es creado y mantenido por la empresa Microsoft. Es open source y multiplataforma (Windows, Linux y Mac)
+
+En el último año se esta convirtiendo en el editor de texto más utilizado por los programadores profesionales de todo el mundo.
+
+Podemos comprobar esta situación si visitamos la encuesta de desarrolladores 2019 del sitio de stackoverflow
+Otro dato que nos puede hacer dimensionar el empleo de Visual Studio Code para programar con Python es la cantidad de descargas de la extensión:

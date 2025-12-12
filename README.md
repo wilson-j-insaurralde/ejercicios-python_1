@@ -1,46 +1,49 @@
 # Ejercicios de Python 🐍
 
-Colección de ejercicios resueltos mientras aprendo **Python**.  
-Organizados por temas: variables, condicionales, bucles, funciones, clases y proyectos prácticos.
+Colección de ejercicios resueltos y organizados por temas (variables, condicionales, bucles, funciones, OOP, y más). Este repositorio está pensado como material de estudio y práctica.
 
 ## 🎯 Objetivo
-Practicar Python paso a paso, entender la lógica de programación y registrar mi avance a lo largo del curso.
+Practicar Python paso a paso, entender la lógica de programación y servir como referencia educativa para estudiantes.
 
 ## 🧩 Cómo usar
-1. Abrir cada archivo `.py` con tu editor de código favorito (por ejemplo, VS Code o PyCharm).  
-2. Ejecutarlo con:
+1. Abre el archivo `.py` con tu editor favorito (VS Code, PyCharm, etc.).
+2. Ejecuta el archivo con:
    ```bash
    python nombre_del_archivo.py
-## ✍️ Cabecera de Autor (marca de agua)
-Todos los archivos `.py` en este repositorio incluyen una cabecera con la información del autor.
-Si estás colaborando, por favor conserva esa cabecera. Para mantenerla, el repositorio incluye comprobaciones automáticas
-que fallarán en commits o pull requests si algún archivo pierde la cabecera.
+   ```
 
-### Comprobar manualmente
-Puedes verificar localmente con:
+## ✍️ Cabecera de Autor (marca de agua)
+Todos los archivos `.py` de este repositorio incluyen una cabecera con la información del autor. Por favor, conserva la cabecera si copias o reutilizas ejemplos — es la forma de atribución del autor.
+
+### Verificar cabecera(s)
+Comprueba que todos los archivos contienen la cabecera ejecutando:
 ```bash
 python tools/verify_header.py
 ```
 
-### Hooks y CI
-- Se ha añadido un hook de `pre-commit` (en `.githooks/pre-commit`) que ejecuta la comprobación antes del commit.
-- Se ha añadido un workflow de GitHub Actions (`.github/workflows/header-check.yml`) que verifica cabeceras en pushes/PRs.
+### Hooks y CI (opcional)
+- `pre-commit`: un hook local en `.githooks/pre-commit` puede ejecutar la verificación antes del commit.
+- `GitHub Actions`: el repo incluye workflows para verificar cabeceras en pushes/PRs (pueden estar deshabilitados si no se subieron por permisos en el token).
 
-### Nota sobre seguridad
-Estos métodos dificultan la eliminación accidental de la cabecera, pero no son infalibles: cualquier persona con control del código puede quitar la verificación.
-Si necesitas protección más fuerte (por ejemplo, distribuir binarios compilados), podemos revisar opciones avanzadas.
+## 🧾 Condiciones de uso
+**Queda prohibido el uso comercial de este repositorio.** El contenido aquí se distribuye exclusivamente para fines educativos, de estudio y aprendizaje.
+Si deseas utilizar el contenido con fines comerciales, de redistribución o para crear derivados, **debes** solicitar permiso y acordar una licencia con el autor.
+
+**Contacto:** Wilson J. Insaurralde — wilson-insaurralde@hotmail.com
 
 ## 📜 Licencia
-Este repositorio usa la licencia CC BY‑NC‑ND 4.0 International.
-Esto permite compartir los ejercicios para fines educativos con atribución, pero no permite usos comerciales ni distribución de versiones modificadas.
+Este repositorio está bajo la licencia **CC BY‑NC‑ND 4.0 International** (Atribución — NoComercial — SinDerivadas). Puedes compartir el material con atribución y para fines no comerciales, pero no puedes usarlo comercialmente, ni publicar versiones modificadas sin permiso.
 
-Si encuentras una copia no autorizada del contenido en otro repositorio, el proyecto contiene un monitor automático que busca la cabecera y crea una issue si detecta coincidencias en repos públicos. Si necesitas que persiga un caso específico, contáctame.
+Si encuentras una copia no autorizada del contenido en un repositorio público, este proyecto dispone de un monitor automático que intenta detectar réplicas y genera una issue en los repositorios donde se encuentre la cabecera. Si necesitas que persiga un caso concreto, contáctame.
 
 ## 🔐 Firma de commits y DMCA
-- Firmar tus commits con GPG añade una prueba de autoría. Puedes habilitarlo con:
-   ```bash
-   git config --global user.signingkey <your GPG key id>
-   git config --global commit.gpgsign true
-   ```
-- Si encuentras que alguien publicó tu trabajo sin permiso y en violación de la licencia, puedes enviar un reporte DMCA a GitHub: https://docs.github.com/en/site-policy/dmca
+- Firmar commits con GPG añade evidencia de autoría:
+  ```bash
+  git config --global user.signingkey <your GPG key id>
+  git config --global commit.gpgsign true
+  ```
+- Si detectas una violación de la licencia (uso comercial sin permiso o distribución no autorizada), puedes reportarlo mediante un DMCA a GitHub: https://docs.github.com/en/site-policy/dmca
+
+---
+Si quieres que modifique el texto (idioma, tono o formato), dime cómo prefieres que lo deje.
 

@@ -1,0 +1,6 @@
+# Ignore local tools used for maintenance but not intended for the repo
+/tools/add_header.py
+
+# Byte-compiled / cache
+__pycache__/
+*.pyc

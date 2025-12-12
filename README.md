@@ -1,6 +1,6 @@
 # Ejercicios de Python 🐍
 
-Colección de ejercicios resueltos y organizados por temas (variables, condicionales, bucles, funciones, OOP, y más). Este repositorio está pensado como material de estudio y práctica.
+Colección de ejercicios resueltos y organizados por temas (variables, condicionales, bucles, funciones, OOP, y más). Este repositorio fue creado por un estudiante y está destinado a otros estudiantes como material de estudio y práctica.
 
 ## 🎯 Objetivo
 Practicar Python paso a paso, entender la lógica de programación y servir como referencia educativa para estudiantes.
@@ -29,7 +29,8 @@ python tools/verify_header.py
 **Queda prohibido el uso comercial de este repositorio.** El contenido aquí se distribuye exclusivamente para fines educativos, de estudio y aprendizaje.
 Si deseas utilizar el contenido con fines comerciales, de redistribución o para crear derivados, **debes** solicitar permiso y acordar una licencia con el autor.
 
-**Contacto:** Wilson J. Insaurralde — wilson-insaurralde@hotmail.com
+**Contacto:** Wilson J. Insaurralde —
+ wilson-insaurralde[arroba]hotmail[punto]com
 
 ## 📜 Licencia
 Este repositorio está bajo la licencia **CC BY‑NC‑ND 4.0 International** (Atribución — NoComercial — SinDerivadas). Puedes compartir el material con atribución y para fines no comerciales, pero no puedes usarlo comercialmente, ni publicar versiones modificadas sin permiso.

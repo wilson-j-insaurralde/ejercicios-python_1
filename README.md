@@ -30,7 +30,5 @@ Las contribuciones son bienvenidas. Si quieres ayudar, por favor abre un issue o
 Este repositorio está bajo la licencia **CC BY‑NC‑ND 4.0 International** (Atribución — NoComercial — SinDerivadas). Puedes compartir el material con atribución y para fines no comerciales, pero no puedes usarlo comercialmente, ni publicar versiones modificadas sin permiso.
 
 Si encuentras una copia no autorizada del contenido en un repositorio público, este proyecto dispone de un monitor automático que intenta detectar réplicas y genera una issue en los repositorios donde se encuentre la cabecera. Si necesitas que persiga un caso concreto, contáctame.
-
 ---
-Si quieres que modifique el texto (idioma, tono o formato), dime cómo prefieres que lo deje.
 

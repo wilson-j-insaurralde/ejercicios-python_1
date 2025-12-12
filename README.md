@@ -32,6 +32,9 @@ Si deseas utilizar el contenido con fines comerciales, de redistribución o para
 **Contacto:** Wilson J. Insaurralde —
  wilson-insaurralde[arroba]hotmail[punto]com
 
+## 🤝 Contribuciones
+Las contribuciones son bienvenidas. Si quieres ayudar, por favor abre un issue o un pull request con tu propuesta. Cuando envíes contribuciones, respeta la cabecera de autor y la licencia del repositorio (CC BY‑NC‑ND 4.0).
+
 ## 📜 Licencia
 Este repositorio está bajo la licencia **CC BY‑NC‑ND 4.0 International** (Atribución — NoComercial — SinDerivadas). Puedes compartir el material con atribución y para fines no comerciales, pero no puedes usarlo comercialmente, ni publicar versiones modificadas sin permiso.
 

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar un programa que permita ingresar dos números en controles de tipo Entry, luego sumar los dos valores ingresados y mostrar la suma en una Label al presionar un botón.
 """
 import tkinter as tk

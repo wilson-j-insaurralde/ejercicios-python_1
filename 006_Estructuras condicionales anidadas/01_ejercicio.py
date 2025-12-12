@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Estamos en presencia de una estructura condicional anidada cuando por la rama del verdadero o el falso de una estructura condicional hay otra estructura condicional.
 
 El diagrama de flujo que se presenta contiene dos estructuras condicionales. La principal se trata de una estructura condicional compuesta y la segunda es una estructura condicional simple y está contenida por la rama del falso de la primer estructura.

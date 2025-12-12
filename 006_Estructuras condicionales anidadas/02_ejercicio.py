@@ -1,3 +1,9 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
 #Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
 
 num1=int(input("ingrese el primer numero: "))

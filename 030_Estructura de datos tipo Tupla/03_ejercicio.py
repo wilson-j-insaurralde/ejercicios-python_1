@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Definir una tupla con tres valores enteros. Convertir el contenido de la tupla a tipo lista. Modificar la lista y luego convertir la lista en tupla.
 """
 

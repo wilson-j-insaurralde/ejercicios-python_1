@@ -1,3 +1,9 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
 """No todos los problemas pueden resolverse empleando estructuras secuenciales. Cuando hay que tomar una decisión aparecen las estructuras condicionales.
 En nuestra vida diaria se nos presentan situaciones donde debemos decidir.
 ¿Elijo la carrera A o la carrera B?

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Se desea almacenar los datos de 3 alumnos. Definir un diccionario cuya clave sea el número de documento del alumno. Como valor almacenar una lista con componentes de tipo tupla donde almacenamos nombre de materia y su nota.
 Crear las siguientes funciones:
 1) Carga de los alumnos (de cada alumno solicitar su dni y los nombres de las materias y sus notas)

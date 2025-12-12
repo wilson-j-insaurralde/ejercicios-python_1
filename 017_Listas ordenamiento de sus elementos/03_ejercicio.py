@@ -1,3 +1,9 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
 """Crear una lista y almacenar los nombres de 5 países. Ordenar alfabéticamente la lista e imprimirla."""
 
 paises=[]

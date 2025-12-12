@@ -1,3 +1,9 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
 """Imprimir todos los números impares que hay entre 1 y 100."""
 
 for x in range(1,101,2):

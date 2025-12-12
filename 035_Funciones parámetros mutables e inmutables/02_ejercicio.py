@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar un programa que contenga las siguientes funciones:
 1) Carga de una lista de 5 nombres.
 2) Ordenar alfabéticamente la lista.

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Python nos permite utilizar distintas metodologías de programación. Hemos implementado inicialmente programas utilizando la programación lineal, luego vimos funciones y trabajamos con programación estructurada.
 
 Ahora introduciremos los conceptos de programación orientada a objetos. A partir de este concepto mostraremos en forma sencilla la metodología de Programación Orientada a Objetos.

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Python nos permite redefinir los operadores matemáticos cuando planteamos una clase.
 
 Los métodos especiales que debemos implementar son los siguientes:

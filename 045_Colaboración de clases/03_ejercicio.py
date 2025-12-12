@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Plantear una clase Club y otra clase Socio.
 La clase Socio debe tener los siguientes atributos: nombre y la antigüedad en el club (en años).
 En el método __init__ de la clase Socio pedir la carga por teclado del nombre y su antigüedad.

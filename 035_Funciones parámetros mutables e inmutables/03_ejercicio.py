@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar un programa que almacene en un diccionario como clave el nombre de un contacto y como valor su número telefónico:
 1) Carga de contactos y su número telefónico.
 2) Pemitir modificar el número telefónico. Se ingresa el nombre del contacto para su búsqueda.

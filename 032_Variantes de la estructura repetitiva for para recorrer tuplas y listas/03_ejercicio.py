@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Definir una función que cargue una lista con palabras y la retorne.
 Luego otra función tiene que mostrar todas las palabras de la lista que tienen más de 5 caracteres.
 """

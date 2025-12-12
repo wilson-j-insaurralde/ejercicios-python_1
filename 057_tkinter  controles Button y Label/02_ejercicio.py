@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Mostrar dos Label, en una se muestra el nombre del programa y en la segunda el año de creación. Disponer un botón para finalizar el programa.
 No permitir al usuario redimensionar la ventana.
 """

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Se cuenta con la siguiente información:
 Las edades de 5 estudiantes del turno mañana.
 Las edades de 6 estudiantes del turno tarde.

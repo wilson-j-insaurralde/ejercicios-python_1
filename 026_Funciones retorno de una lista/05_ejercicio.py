@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Desarrollar una aplicación que permita ingresar por teclado los nombres de 5 artículos y sus precios.
 Definir las siguientes funciones:
 1) Cargar los nombres de articulos y sus precios.

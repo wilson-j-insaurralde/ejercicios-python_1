@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Pre-commit hook to verify author header exists in all .py files
+python tools/verify_header.py
+status=$?
+if [ "$status" -ne 0 ]; then
+  echo "Aborting commit: hay archivos sin la cabecera de autor."
+  exit 1
+fi
+exit 0

@@ -1,3 +1,9 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
 """Elaborar una función que reciba tres enteros y nos retorne el valor promedio de los mismos."""
 def promedio(x,y,z):
     prom=(x+y+z)/3

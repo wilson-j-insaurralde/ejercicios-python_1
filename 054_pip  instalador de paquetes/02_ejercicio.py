@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Mostrar una ventana con un botón en su interior. Al ser presionado mostrar un mensaje.
 
 El programa en Python haciendo uso del paquete wxPython requiere el siguiente algoritmo:

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Realizar un programa que lea cuatro valores numéricos e informar su suma y promedio
 """
 num1=int(input("ingrese el primer numero: "))

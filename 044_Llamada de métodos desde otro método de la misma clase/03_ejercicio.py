@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar una clase que administre una agenda personal. Se debe almacenar el nombre de la persona, teléfono y mail
 Debe mostrar un menú con las siguientes opciones:
 1- Carga de un contacto en la agenda.

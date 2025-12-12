@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar un programa que permita:
 1) Cargar una lista de 10 elementos enteros.
 2) Generar dos listas a partir de la primera. En una guardar los valores positivos y en otra los negativos.

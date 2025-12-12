@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Confeccionar un programa que contenga las siguientes funciones:
 1) Carga de una lista y retorno al bloque principal.
 2) Fijar en cero todos los elementos de la lista que tengan un valor menor a 10.

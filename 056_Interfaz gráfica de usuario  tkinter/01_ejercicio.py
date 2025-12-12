@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Mostrar una ventana y que en su título aparezca el mensaje 'Hola Mundo'.
 
 El programa en Python haciendo uso del módulo 'tkinter' requiere el siguiente algoritmo:

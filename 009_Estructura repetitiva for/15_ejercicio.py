@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
 a) La cantidad de valores ingresados negativos.
 b) La cantidad de valores ingresados positivos.

@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Crear un diccionario en Python que defina como clave el número de documento de una persona y como valor un string con su nombre.
 Desarrollar las siguientes funciones:
 1) Cargar por teclado los datos de 4 personas.

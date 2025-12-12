@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Definir dos listas de 3 elementos.
 La primer lista cada elemento es una sublista con el nombre del padre y la madre de una familia.
 La segunda lista está constituida por listas con los nombres de los hijos de cada familia. Puede haber familias sin hijos.

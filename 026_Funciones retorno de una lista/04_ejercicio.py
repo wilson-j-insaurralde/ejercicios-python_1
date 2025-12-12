@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 En una empresa se almacenaron los sueldos de 10 personas.
 Desarrollar las siguientes funciones y llamarlas desde el bloque principal:
 1) Carga de los sueldos en una lista.

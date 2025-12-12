@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Cargar por teclado y almacenar en una lista las alturas de 5 personas (valores float)
 Obtener el promedio de las mismas. Contar cuántas personas son más altas que el promedio y cuántas más bajas.
 """

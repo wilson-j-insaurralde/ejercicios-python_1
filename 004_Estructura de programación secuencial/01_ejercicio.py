@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Cuando en un problema sólo participan operaciones, entradas y salidas se la denomina una estructura secuencial.
 Los problemas diagramados y codificados previamente emplean solo estructuras secuenciales.
 

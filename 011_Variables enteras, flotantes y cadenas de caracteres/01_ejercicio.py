@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Hasta este momento hemos visto como definir variables enteras y flotantes. Realizar su carga por asignación y por teclado.
 
 Para iniciarlas por asignación utilizamos el operador =

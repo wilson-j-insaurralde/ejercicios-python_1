@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 La aplicación pip es la herramienta fundamental que trae Python para la instalación de paquetes para poder utilizarlos en nuestros proyectos.
 
 Vimos en el concepto anterior la sintaxis que se requiere para instalar un paquete que se encuentra publicado en el sitio pypi.org:

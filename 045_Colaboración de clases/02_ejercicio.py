@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Plantear un programa que permita jugar a los dados. Las reglas de juego son:
 se tiran tres dados si los tres salen con el mismo valor mostrar un mensaje que "gano", sino "perdió".
 

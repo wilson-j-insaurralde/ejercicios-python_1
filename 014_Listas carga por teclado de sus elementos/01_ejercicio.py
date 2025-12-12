@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 Una lista en Python es una estructura mutable (es decir puede ir cambiando durante la ejecución del programa)
 
 Hemos visto que podemos definir una lista por asignación indicando entre corchetes los valores a almacenar:

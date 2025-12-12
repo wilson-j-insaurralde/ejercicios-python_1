@@ -1,4 +1,10 @@
 """
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+
+"""
 En el concepto anterior vimos que fácilmente podemos definir por asignación una lista cuyas componentes sean también listas:
 
 lista=[[1,2,3], [7,4], [9,2]]

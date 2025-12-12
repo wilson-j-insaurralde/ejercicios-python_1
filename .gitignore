@@ -4,3 +4,7 @@
 # Byte-compiled / cache
 __pycache__/
 *.pyc
+
+# Ignore temporary compare files
+README_remote.md
+README_HEAD.md

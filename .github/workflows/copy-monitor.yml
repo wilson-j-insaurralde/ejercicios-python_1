@@ -1,0 +1,60 @@
+name: Monitor for copied code
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # run weekly (Sunday UTC)
+  workflow_dispatch:
+
+jobs:
+  search-copies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run copy detection
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const header = 'Autor: Wilson J. Insaurralde';
+            const query = `${header} in:file extension:py`;
+            const owner = context.repo.owner;
+            const repoName = context.repo.repo;
+            const max_pages = 5; // limited number of pages to keep runtimes low
+            let found = [];
+            for (let page = 1; page <= max_pages; page++) {
+              const res = await github.rest.search.code({
+                q: query,
+                per_page: 100,
+                page: page,
+              });
+              if (!res.data || !res.data.items) break;
+              for (const item of res.data.items) {
+                if (item.repository.full_name.toLowerCase() === `${owner.toLowerCase()}/${repoName.toLowerCase()}`) continue;
+                found.push({
+                  repo: item.repository.full_name,
+                  path: item.path,
+                  url: item.html_url,
+                });
+              }
+              if (res.data.items.length < 100) break; // no more pages
+            }
+
+            if (found.length === 0) {
+              console.log('No public copies detected with the header.');
+              return;
+            }
+
+            const title = `Possible copies detected: ${found.length} matches`;
+            let body = `Automated search found ${found.length} occurrences of the header string in public repositories:\n\n`;
+            for (const item of found.slice(0, 50)) {
+              body += `- [${item.repo}/${item.path}](${item.url})\n`;
+            }
+            body += '\nIf you believe these are improper copies, please review and act accordingly.';
+
+            // create issue summarizing findings
+            await github.rest.issues.create({
+              owner: owner,
+              repo: repoName,
+              title: title,
+              body: body,
+            });
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

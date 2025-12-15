@@ -3,3 +3,32 @@ Autor: Wilson J. Insaurralde
 Email: wilson-insaurralde[arroba]hotmail[punto]com
 Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
 """
+
+"""
+Disponer un Listbox con una serie de nombres de frutas. Permitir la selección solo de uno de ellos. Cuando se presione un botón recuperar la fruta seleccionada y mostrarla en una Label.
+"""
+import tkinter as tk
+from tkinter import ttk
+
+class Aplicacion:
+    def __init__(self):
+        self.ventana1=tk.Tk()
+        self.listbox1=tk.Listbox(self.ventana1)
+        self.listbox1.grid(column=0,row=0)
+        self.listbox1.insert(0,"papa")
+        self.listbox1.insert(1,"manzana")
+        self.listbox1.insert(2,"pera")
+        self.listbox1.insert(3,"sandia")
+        self.listbox1.insert(4,"naranja")
+        self.listbox1.insert(5,"melon")
+        self.boton1=ttk.Button(self.ventana1, text="Recuperar", command=self.recuperar)
+        self.boton1.grid(column=0, row=1)
+        self.label1=ttk.Label(text="Seleccionado:")
+        self.label1.grid(column=0, row=2)        
+        self.ventana1.mainloop()
+
+    def recuperar(self):
+        if len(self.listbox1.curselection())!=0:
+            self.label1.configure(text=self.listbox1.get(self.listbox1.curselection()[0]))
+
+aplicacion1=Aplicacion()

@@ -1,0 +1,43 @@
+"""
+Autor: Wilson J. Insaurralde
+Email: wilson-insaurralde[arroba]hotmail[punto]com
+Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
+"""
+"""
+Confeccionar una aplicación que muestre dos controles de tipo LabelFrame. En la primera disponer 2 Label, 2 Entry y un Button, en el segundo LabelFrame disponer 3 botones.
+"""
+
+import tkinter as tk 
+from tkinter import ttk
+
+
+class aplicacion : 
+    def __init__(self):
+        self.ventana1=tk.Tk()
+        self.labelframe1=ttk.LabelFrame(self.ventana1,text="Login:")
+        self.labelframe1.grid(column=0,row=0,padx=5,pady=10)
+        self.login()
+        self.labelframe2=ttk.LabelFrame(self.ventana1,text="operaciones")
+        self.labelframe2.grid(column=0,row=1,padx=5,pady=10)
+        self.operaciones()
+        self.ventana1.mainloop()
+    def login(self):
+        self.label1=ttk.Label(self.labelframe1, text="nombre de usuario: ")
+        self.label1.grid(column=0 ,row=0 ,padx=4,pady=4)
+        self.entry1=ttk.Entry(self.labelframe1)
+        self.entry1.grid(column=1,row=0,padx=4,pady=4)
+        self.label2=ttk.Label(self.labelframe1,text="ingrese clave:")
+        self.label2.grid(column=0,row=1,padx=4,pady=4)
+        self.entry2=ttk.Entry(self.labelframe1,show="*")
+        self.entry2.grid(column=1,row=1,padx=4,pady=4)
+        self.boton1=ttk.Button(self.labelframe1, text="ingresar")
+        self.boton1.grid(column=1,row=2,padx=4,pady=4)
+    def operaciones(self):
+        self.boton2=ttk.Button(self.labelframe2,text="agregar usuario")
+        self.boton2.grid(column=0,row=0,padx=4,pady=4)
+        self.boton3=ttk.Button(self.labelframe2,text="modificar usuario")
+        self.boton3.grid(column=1,row=0,padx=4,pady=4)
+        self.boton4=ttk.Button(self.labelframe2,text="borrar usuario")
+        self.boton4.grid(column=2,row=0,padx=4,pady=4)
+
+aplicacion=aplicacion()

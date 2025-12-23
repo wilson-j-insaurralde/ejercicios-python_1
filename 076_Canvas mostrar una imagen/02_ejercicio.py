@@ -21,7 +21,7 @@ class aplicacion():
         self.archi1=tk.PhotoImage(file="076_Canvas mostrar una imagen/imagenes/carta1.png")
         self.archi2=tk.PhotoImage(file="076_Canvas mostrar una imagen/imagenes/carta2.png")
         self.archi3=tk.PhotoImage(file="076_Canvas mostrar una imagen/imagenes/carta3.png")
-        self.canvas1.create_image(50, 100, image=self.archi1, anchor="nw")
+        #self.canvas1.create_image(50, 100, image=self.archi1, anchor="nw")
 
 
         self.ventana1.mainloop()
@@ -30,9 +30,9 @@ class aplicacion():
         valor=random.randint(1,3)
         if valor==1:
            self.canvas1.create_image(50, 100, image=self.archi1, anchor="nw")
-        if valor==2:
+        elif valor==2:
            self.canvas1.create_image(50, 100, image=self.archi2, anchor="nw")
-        if valor==3:
+        elif valor==3:
             self.canvas1.create_image(50, 100, image=self.archi3, anchor="nw")
 
 

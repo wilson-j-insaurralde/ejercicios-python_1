@@ -75,15 +75,60 @@ class programapicantenashe:
         self.cuaderno1.add(self.pagina3,text="listado completo")
         self.labelframe3=ttk.Labelframe(self.pagina3,text="articulo")
         self.labelframe3.grid(column=0,row=0,padx=10,pady=10)
-        self.boton3=ttk.Button(self.labelframe3,text="listado completo",command=self)
+        self.boton3=ttk.Button(self.labelframe3,text="listado completo",command=self.listar)
         self.boton3.grid(column=0,row=0,padx=4,pady=4)
         self.scrolledtext=st.ScrolledText(self.labelframe3,width=30,height=10)
         self.scrolledtext.grid(column=0,row=1,padx=10,pady=10)
+    def listar(self):
+        pass
 
     def borrado_de_articulo(self):
+        self.pagina4=ttk.Frame(self.cuaderno1)
+        self.cuaderno1.add(self.pagina4,text="borrado de articulos")
+        self.labelframe4=ttk.Labelframe(self.pagina4,text="articulos")
+        self.labelframe4.grid(column=0,row=0,padx=10,pady=10)
+        self.label6=ttk.Label(self.labelframe4,text="codigo: ")
+        self.label6.grid(column=0,row=0,padx=4,pady=4)
+        self.codigo_borrar=tk.StringVar()
+        self.entry6=ttk.Entry(self.labelframe4,width=20,textvariable=self.codigo_borrar)
+        self.entry6.grid(column=1,row=0,padx=4,pady=4)
+        self.boton4=ttk.Button(self.labelframe4,text="borrar",command=self.borrar)
+        self.boton4.grid(column=1,row=1,padx=4,pady=4)
+    def borrar(self):
         pass
+
     def modificar_articulo(self):
+        self.pagina5=ttk.Frame(self.cuaderno1)
+        self.cuaderno1.add(self.pagina5,text="modificar articulo")
+        self.labelframe5=ttk.Labelframe(self.pagina5,text="articulo")
+        self.labelframe5.grid(column=0,row=0,padx=10,pady=10)
+        self.label7=ttk.Label(self.labelframe5,text="codigo")
+        self.label7.grid(column=0,row=0,padx=4,pady=4)
+        self.codigo_modificar=tk.StringVar()
+        self.entry7=ttk.Entry(self.labelframe5,width=20,textvariable=self.codigo_modificar)
+        self.entry7.grid(column=1,row=0,padx=4,pady=4)
+        self.label8=ttk.Label(self.labelframe5,text="descripcion: ")
+        self.label8.grid(column=0,row=1,padx=4,pady=4)
+        self.descripcion_modificar=tk.StringVar()
+        self.entry8=ttk.Entry(self.labelframe5,width=20,textvariable=self.descripcion_modificar)
+        self.entry8.grid(column=1,row=1,padx=4,pady=4)
+        self.label9=ttk.Label(self.labelframe5,text="precio")
+        self.label9.grid(column=0,row=2,padx=4,pady=4)
+        self.precio_modificar=tk.StringVar()
+        self.entry9=ttk.Entry(self.labelframe5,width=20,textvariable=self.precio_modificar)
+        self.entry9.grid(column=1,row=2,padx=4,pady=4)
+        self.boton5=ttk.Button(self.labelframe5,text="consultar", command=self.consultar_modificar)
+        self.boton5.grid(column=0,row=3,padx=4,pady=4)
+        self.boton6=ttk.Button(self.labelframe5,text="modificar",command=self.modificar)
+        self.boton6.grid(column=1,row=3,padx=4,pady=4)
+    def consultar_modificar(self):
         pass
+    def modificar(self):
+        pass
+
+
+
+
 
 
 

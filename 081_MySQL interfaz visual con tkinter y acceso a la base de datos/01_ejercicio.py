@@ -63,8 +63,8 @@ class FormularioArticulos():
         self.entrycodigo.grid(column=1,row=0,padx=4,pady=4)
         self.label4=ttk.Label(self.labelframe2,text="descripcion")
         self.label4.grid(column=0,row=1,padx=4,pady=4)
-        self.descripcioncarga=tk.StringVar()
-        self.entrydescripcion=ttk.Entry(self.labelframe2,width=20,textvariable=self.descripcioncarga)
+        self.descripcioncarga2=tk.StringVar()
+        self.entrydescripcion=ttk.Entry(self.labelframe2,width=20,textvariable=self.descripcioncarga2)
         self.entrydescripcion.grid(column=1,row=1,padx=4,pady=4)
         self.label5=ttk.Label(self.labelframe2,text="precio")
         self.label5.grid(column=0,row=2,padx=4,pady=4)
@@ -75,7 +75,17 @@ class FormularioArticulos():
         self.boton2.grid(column=1,row=3,padx=4,pady=4)
 
     def consultar(self):
-        pass
+        datos=(self.codigocarga.get(),)
+        repuesta=self.articulo1.consulta(datos)
+        if len(repuesta)>0:
+            self.descripcioncarga2.set(repuesta[0][0])
+            self.preciocarga2.set(repuesta[0][1])
+        else:
+            self.descripcioncarga2.set("")
+            self.preciocarga2.set("")
+            mb.showinfo("informacion","no existe un articulo con dicho codigo")
+
+
     def lista_completo3(self):
         self.pagina3=ttk.Frame(self.cuaderno1)
         self.cuaderno1.add(self.pagina3,text="listado completo")
@@ -87,7 +97,10 @@ class FormularioArticulos():
         self.scrolledtex1.grid(column=0,row=1,padx=10,pady=10)
 
     def listado(self):
-        pass
+        respuestas=self.articulo1.recuperar_todos()
+        self.scrolledtex1.delete("1.0",tk.END)
+        for fila in respuestas:
+            self.scrolledtex1.insert(tk.END,"código:"+str(fila[0])+"\ndescripción:"+fila[1]+"\nprecio:"+str(fila[2])+"\n\n")
 
 
 

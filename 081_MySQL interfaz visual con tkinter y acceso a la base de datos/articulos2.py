@@ -22,3 +22,12 @@ class arcticulos():
         cursor.execute(sql,datos)
         cone.close()
         return cursor.fetchall()
+    def recuperar_todos(self):
+        cone=self.abrir()
+        cursor=cone.cursor()
+        sql="select codigo, descripcion, precio from articulos"
+        cursor.execute(sql)
+        cone.close()
+        return cursor.fetchall()
+    def borrar(self):
+        pass

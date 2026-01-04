@@ -90,10 +90,13 @@ class programapicantenashe:
         self.labelframe3.grid(column=0,row=0,padx=10,pady=10)
         self.boton3=ttk.Button(self.labelframe3,text="listado completo",command=self.listar)
         self.boton3.grid(column=0,row=0,padx=4,pady=4)
-        self.scrolledtext=st.ScrolledText(self.labelframe3,width=30,height=10)
-        self.scrolledtext.grid(column=0,row=1,padx=10,pady=10)
+        self.scrolledtext1=st.ScrolledText(self.labelframe3,width=30,height=10)
+        self.scrolledtext1.grid(column=0,row=1,padx=10,pady=10)
     def listar(self):
-        pass
+        respuestas=self.articulos.recuperar_todos()
+        self.scrolledtext1.delete("1.0",tk.END)
+        for fila in respuestas:
+            self.scrolledtext1.insert(tk.END,"código:"+str(fila[0])+"\ndescripción:"+fila[1]+"\nprecio:"+str(fila[2])+"\n\n")
 
     def borrado_de_articulo(self):
         self.pagina4=ttk.Frame(self.cuaderno1)

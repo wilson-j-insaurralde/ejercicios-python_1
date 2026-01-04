@@ -111,7 +111,12 @@ class programapicantenashe:
         self.boton4=ttk.Button(self.labelframe4,text="borrar",command=self.borrar)
         self.boton4.grid(column=1,row=1,padx=4,pady=4)
     def borrar(self):
-        pass
+        codigo=(self.codigo_borrar.get(),)
+        repuesta=self.articulos.borrar(codigo)
+        if repuesta>0:
+            mb.showinfo("informacion","borrado exitosamente")
+        else:
+            mb.showinfo("informacion","no se encontro articulo con dicho codigo")
 
     def modificar_articulo(self):
         self.pagina5=ttk.Frame(self.cuaderno1)
@@ -137,10 +142,27 @@ class programapicantenashe:
         self.boton5.grid(column=0,row=3,padx=4,pady=4)
         self.boton6=ttk.Button(self.labelframe5,text="modificar",command=self.modificar)
         self.boton6.grid(column=1,row=3,padx=4,pady=4)
+    #se puede reciclar el de arriba pero preferi volver hacerlo para entender bien saludos 
     def consultar_modificar(self):
-        pass
+        datos=(self.codigo_modificar.get(),)
+        repuesta=self.articulos.consultar_codigo2(datos)
+        if len(repuesta)>0:
+            self.descripcion_modificar.set(repuesta[0][0])
+            self.precio_modificar.set(repuesta[0][1])
+        else:
+            self.descripcion_modificar.set("")
+            self.precio_modificar.set("")
+            mb.showinfo("informacion","no se encontro articulo con dicho codigo")
+
+
+
     def modificar(self):
-        pass
+        datos=(self.descripcion_modificar.get(),self.precio_modificar.get(),self.codigo_modificar.get())
+        respuesta=self.articulos.modificar(datos)
+        if respuesta>0:
+            mb.showinfo("informacion","se actualizo correctamente")
+        else:
+            mb.showinfo("informacion","No se encontró el código o no hubo cambios")
 
 
 

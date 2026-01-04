@@ -29,5 +29,29 @@ class arcticulos():
         cursor.execute(sql)
         cone.close()
         return cursor.fetchall()
-    def borrar(self):
-        pass
+    def borrar(self,codigo):
+        cone=self.abrir()
+        cursor=cone.cursor()
+        sql="delete from articulos where codigo=%s"
+        cursor.execute(sql,codigo)
+        cantidad = cursor.rowcount
+        cone.commit()
+        cone.close()
+        return cantidad
+    #lo vuelvo hacer para entender su funcionamiento corectamente pero se puede re utilizar el de arriba
+    def consultar_codigo2(self,datos):
+        cone=self.abrir()
+        cursor=cone.cursor()
+        sql="select descripcion,precio from articulos where codigo=%s"
+        cursor.execute(sql,datos)
+        cone.close()
+        return cursor.fetchall()
+    def modificar(self,datos):
+        cone=self.abrir()
+        cursor=cone.cursor()
+        sql="update articulos set descripcion=%s ,precio=%s where codigo=%s"
+        cursor.execute(sql,datos)
+        cantidad = cursor.rowcount
+        cone.commit()
+        cone.close()
+        return cantidad

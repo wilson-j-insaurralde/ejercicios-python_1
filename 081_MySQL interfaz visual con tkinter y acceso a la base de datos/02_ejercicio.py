@@ -42,7 +42,12 @@ class programapicantenashe:
         self.boton1.grid(column=1,row=2,padx=4,pady=4)
         
     def confirmar(self):
-        pass
+        datos=(self.descripcion_entrada.get(),self.precio_entrada.get())
+        self.articulos.alta(datos)
+        mb.showinfo("Información", "Los datos fueron cargados")
+        self.descripcion_entrada.set("")
+        self.precio_entrada.set("")
+
     def consultar_por_codigo(self):
         self.pagina2=ttk.Frame(self.cuaderno1)
         self.cuaderno1.add(self.pagina2,text="consultar por codigo")
@@ -67,7 +72,15 @@ class programapicantenashe:
         self.boton2.grid(column=1,row=3,padx=4,pady=4)
 
     def consultar(self):
-        pass
+        datos=(self.codigo_articulo.get(),)
+        repuesta=self.articulos.consulta(datos)
+        if len(repuesta)>0:
+            self.descripcion_consulta.set(repuesta[0][0])
+            self.precio_consulta.set(repuesta[0][1])
+        else:
+            self.descripcion_consulta.set("")
+            self.precio_consulta.set("")
+            mb.showinfo("informacion","no existe articulo con dicho codigo")
 
 
     def listado_completo(self):

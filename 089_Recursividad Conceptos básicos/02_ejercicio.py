@@ -7,3 +7,8 @@ Derechos de Autor (c) 2025 Wilson J. Insaurralde. Todos los derechos reservados.
 """
 Implementación de una función recursiva que reciba un parámetro de tipo entero y luego llame en forma recursiva con el valor del parámetro menos 1.
 """
+def imprimir(x):
+    print(x)
+    imprimir(x-1)
+
+imprimir(5)    

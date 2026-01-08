@@ -16,7 +16,7 @@ import articulo2
 class aplicacion:
     def __init__(self):
         self.ventana1=tk.Tk()
-        articulo=articulo2.articuloss()
+        self.articulo=articulo2.articuloss()
         self.cuaderno1=ttk.Notebook(self.ventana1)
         self.carga_de_articulos()
         self.consulta_por_codigo()
@@ -43,7 +43,9 @@ class aplicacion:
         self.boton1=ttk.Button(self.labelframe1,text="confirmar",command=self.carga)
         self.boton1.grid(column=1,row=2,padx=4,pady=4)
     def carga(self):
-        pass
+        datos=(self.descripcion_carga.get(),self.precio_carga.get())
+        repuesta=self.articulo.carga(datos)
+        mb.showinfo("informacion","su carga fue exitosa")
 
     def consulta_por_codigo(self):
         self.pagina2=ttk.Frame(self.cuaderno1)
@@ -68,7 +70,16 @@ class aplicacion:
         self.boton2=ttk.Button(self.labelframe2,text="consultar",command=self.consulta)
         self.boton2.grid(column=1,row=3,padx=4,pady=4)
     def consulta(self):
-        pass
+        codigo=(self.codigo_consulta.get(),)
+        repuesta=self.articulo.consultas(codigo)
+        if len(repuesta)>0:
+            self.descripcion_consulta.set(repuesta[0][0])
+            self.precio_consulta.set(repuesta[0][1])
+        else:
+            self.descripcion_consulta.set("")
+            self.precio_consulta.set("")
+            mb.showinfo("informacion","nose encontro articulo con dicho codigo")
+
 
     def listado_completo(self):
         self.pagina3=ttk.Frame(self.cuaderno1)
@@ -80,7 +91,10 @@ class aplicacion:
         self.scrolledtext=st.ScrolledText(self.labelframe3,width=30,height=20)
         self.scrolledtext.grid(column=0,row=1,padx=10,pady=10)
     def listar(self):
-        pass
+        repuesta=self.articulo.listar()
+        self.scrolledtext.delete("1.0", tk.END)
+        for lista in repuesta:
+            self.scrolledtext.insert(tk.END,"codigo: "+str(lista[0])+"\ndescripcion: "+str(lista[1])+"\nprecio: "+str(lista[2])+"\n\n")
     def borrado_de_articulos(self):
         self.pagina4=ttk.Frame(self.cuaderno1)
         self.cuaderno1.add(self.pagina4,text="borrado de articulo")
@@ -94,7 +108,12 @@ class aplicacion:
         self.boton4=ttk.Button(self.labelframe4,text="borrar",command=self.borrar)
         self.boton4.grid(column=1,row=1,padx=4,pady=4)
     def borrar(self):
-        pass
+        codigo=(self.codigo_borrar.get(),)
+        repuesta=self.articulo.borrar(codigo)
+        if repuesta>0:
+            mb.showinfo("informacion","se borro exitosamente")
+        else:
+            mb.showinfo("informacion","no se encontro articulo con dicho codigo")
     def modificar_articulos(self):
         self.pagina5=ttk.Frame(self.cuaderno1)
         self.cuaderno1.add(self.pagina5,text="modificar articulos")
@@ -120,10 +139,23 @@ class aplicacion:
         self.boton6=ttk.Button(self.labelframe5,text="modificar",command=self.modificar_tuki)
         self.boton6.grid(column=1,row=3,padx=4,pady=4)
     def conulta_modificar(self):
-        pass
+        codigo=(self.codigo_modificar.get(),)
+        repuesta=self.articulo.consultas(codigo)
+        if len(repuesta)>0:
+            self.descripcion_modificar.set(repuesta[0][0])
+            self.precio_modificar.set(repuesta[0][1])
+        else:
+            self.descripcion_modificar.set("")
+            self.precio_modificar.set("")
+            mb.showinfo("informacion","no se encontro articulo con dicho codigo")
     def modificar_tuki(self):
-        pass
-        
+        datos=(self.descripcion_modificar.get(),self.precio_modificar.get(),self.codigo_modificar.get())
+        repuesta=self.articulo.modificar(datos)
+        if repuesta>0:
+            mb.showinfo("informacion","su carga fue exitosa")
+        else:
+            mb.showinfo("informacion","no se pudo actualizar")
+
 
 aplicatuki=aplicacion()
         

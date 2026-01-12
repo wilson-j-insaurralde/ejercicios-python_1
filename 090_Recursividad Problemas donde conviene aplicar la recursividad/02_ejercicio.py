@@ -77,6 +77,8 @@ class aplicacion:
             if str(self.tablero[fil][col].cget("text")) == "0":
                 self.tablero[fil][col].configure(text="9")
                 self.tablero[fil][col].configure(background="yellow")
+                self.ventana1.update() 
+                self.ventana1.after(50)
                 self.recorrer(fil, col + 1) 
                 self.recorrer(fil + 1, col) 
                 self.recorrer(fil - 1, col) 

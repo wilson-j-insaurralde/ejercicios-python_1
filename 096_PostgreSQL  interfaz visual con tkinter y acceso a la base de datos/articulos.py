@@ -1,5 +1,39 @@
 import psycopg2
 
 class Articulos():
-    def __init__(self):
-        pass
+    def abrir(self):
+        conexion1=psycopg2.connect(database="bd1", user="postgres", password="66112233")
+        return conexion1
+
+
+    def alta(self,datos):
+        cone=self.abrir()
+        try:
+            cursor=cone.cursor()
+            sql="insert into articulos (descripcion,precio) values (%s,%s)"
+
+            cursor.execute(sql,datos)
+            cone.commit()
+        finally:
+            cone.close()
+
+    def consulta(self,datos):
+        cone=self.abrir()
+        try:
+            cursor=cone.cursor()
+            sql="select descripcion,precio from articulos where codigo=%s"
+            cursor.execute(sql,datos)
+            return cursor.fetchall()
+        
+
+        finally:
+            cone.close()
+    def recuperar_todos(self):
+        cone=self.abrir()
+        try:
+            cursor=cone.cursor()
+            sql="select codigo,descripcion,precio from articulos"
+            cursor.execute(sql)
+            return cursor.fetchall()
+        finally:
+            cone.close()

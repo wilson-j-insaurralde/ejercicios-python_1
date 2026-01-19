@@ -50,7 +50,12 @@ class aplicacionnashe():
         self.boton1.grid(column=1,row=2,padx=4,pady=4)
 
     def confirmar_carga(self):
-        pass
+        datos=(self.descripcion_carga.get(),self.precio_carga.get())
+        self.articulo1.alta(datos)
+        mb.showinfo("informacion","los datos fueron cargados")
+        self.descripcion_carga.set("")
+        self.precio_carga.set("")
+
 
 
     def consulta_por_codigo(self):
@@ -77,7 +82,15 @@ class aplicacionnashe():
         self.boton2.grid(column=1,row=3,padx=4,pady=4)
 
     def consultar(self):
-        pass
+        datos=(self.codigo_consulta.get(),)
+        repuesta=self.articulo1.consulta(datos)
+        if len(repuesta)>0:
+            self.descripcion_consulta.set(repuesta[0][0])
+            self.precio_consulta.set(repuesta[0][1])
+        else:
+            self.descripcion_consulta.set("")
+            self.precio_consulta.set("")
+            mb.showinfo("informacion","no existe articulo con dicho codigo")
 
 
     def listado_completo(self):
@@ -92,7 +105,11 @@ class aplicacionnashe():
 
 
     def listar_completo(self):
-        pass
+        respuestas=self.articulo1.recuperar_todos()
+        self.scrolledtextlledtext.delete("1.0",tk.END)
+        for fila in respuestas:
+            self.scrolledtextlledtext.insert(tk.END,"código:"+str(fila[0])+"\ndescripción:"+fila[1]+"\nprecio:"+str(fila[2])+"\n\n")
+            
 
 
 aplicacion=aplicacionnashe()

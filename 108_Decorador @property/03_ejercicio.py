@@ -47,3 +47,4 @@ c.lado = 10
 print("Nuevo lado:", c.lado)
 print("Superficie:", c.superficie)  # 100
 print("Perímetro:", c.perimetro)    # 40
+

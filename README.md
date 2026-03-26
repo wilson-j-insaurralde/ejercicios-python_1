@@ -47,4 +47,10 @@ Este repositorio es el resultado de un entrenamiento intensivo de **108 módulos
 * **Enfoque:** Lógica de Ingeniería y Backend sólido.
 
 ---
-**Desarrollado con dedicación por [Wilson J. Insaurralde](https://www.linkedin.com/in/wilson-j-insaurralde/)**
+---
+## 🎓 Certificación y Aprendizaje
+Este repositorio documenta mi proceso de formación y resolución de desafíos técnicos del curso. 
+
+* **Resolución y Código:** [Wilson J. Insaurralde](https://www.linkedin.com/in/wilson-j-insaurralde/)
+* **Enfoque:** Práctica intensiva y consolidación de conceptos de ingeniería de software.
+---

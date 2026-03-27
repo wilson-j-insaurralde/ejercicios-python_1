@@ -1,6 +1,6 @@
 # 🐍 Python Mastery: Core Engineering & Backend Fundamentals
 
-Este repositorio es el resultado de un entrenamiento intensivo de **108 módulos teóricos** y la resolución de **más de 300 ejercicios prácticos**. El objetivo principal es construir una base técnica inquebrantable en Python, orientada a la resolución de problemas complejos y la creación de software escalable.
+Este repositorio es el resultado de un entrenamiento intensivo de **108 módulos teóricos** y la resolución de **más de 300 ejercicios prácticos**. El objetivo principal es construir una base solida Python, orientada a la resolución de problemas complejos y la creación de software escalable.
 
 ---
 
